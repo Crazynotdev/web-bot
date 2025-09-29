@@ -1,5 +1,5 @@
 import makeWASocket, { useMultiFileAuthState } from "@whiskeysockets/baileys";
-import { handleCommand } from "./commands.js";
+import { handleCommand } from "./api/bot/commands.js";
 
 export async function startBot(sessionId, sessionData) {
   const { state, saveCreds } = await useMultiFileAuthState(`./sessions/${sessionId}`);
